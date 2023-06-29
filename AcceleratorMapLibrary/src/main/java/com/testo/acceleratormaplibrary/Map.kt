@@ -16,7 +16,7 @@ class Map {
 				i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
 				context.startActivity(i)
 			} catch (e: ActivityNotFoundException) {
-				// when the google maps is not installed on users device
+				// when the google maps is not installed on user's device
 				// we will redirect our user to google play to download google maps.
 				val uri: Uri = Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps")
 				val i = Intent(Intent.ACTION_VIEW, uri)
